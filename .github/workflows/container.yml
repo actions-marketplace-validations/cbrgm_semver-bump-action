@@ -41,7 +41,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           token: ${{ secrets.BOT_PAT_TOKEN }}
 
@@ -123,7 +123,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           token: ${{ secrets.BOT_PAT_TOKEN }}
 
@@ -142,7 +142,7 @@ jobs:
       - name: Ghcr manifest
         id: ghcr
         if: github.event_name != 'pull_request'
-        uses: actionhippie/manifest@b9a6c7fed4717b123ad2b73b678cd9fc3dd7372d # v1.8.1
+        uses: actionhippie/manifest@1e7c410f278cbe5165ed8f8e41f4b2d01dffaeef # v1.8.2
         with:
           username: cbrgm
           password: ${{ secrets.BOT_PAT_TOKEN }}
